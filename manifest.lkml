@@ -1,7 +1,7 @@
 project_name: "app-event"
 
 application: web-analytics {
-  label: "Web Analytics (MP Ready)"
+  label: "Web Analytics"
   definition_file: "application.json"
 }
 

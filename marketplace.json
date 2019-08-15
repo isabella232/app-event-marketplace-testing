@@ -1,0 +1,43 @@
+{
+    "label": "Web Analytics",
+    "category_label": "Applications",
+    "branding": {
+      "badge": "Beta",
+      "brand_color": "#6c43e0",
+      "image_uri": "https://marketplace-api.looker.com/app-icons/icon_event_analytics.svg",
+      "tagline": "Gain a holistic view of all digital marketing sources to understand your spend and returns."
+    },
+    "constants": {
+        "CONNECTION_NAME": {
+            "label": "Connection Name",
+            "description": "The connection that houses your GA360 data (it should have been created using Fivetran).",
+            "value_constraint": "connection"
+        },
+        "SCHEMA_NAME": {
+            "label": "Schema Name",
+            "description": "The schema name of your GA360 data."
+        },
+        "GA360_TABLE_NAME": {
+            "label": "GA360 Table Name",
+            "description": "The table name of your GA360 data (this should end with a _* due to date partitioned tables)."
+        },
+        "CONFIG_PROJECT_NAME": {
+            "label": "Config Project Name",
+            "description": "The name of the associated config project."
+        }
+    },
+    "models": [
+        {
+            "name": "event_analytics",
+            "connection_constant": "CONNECTION_NAME"
+        }
+    ],
+    "auxiliary_projects": [
+        {
+            "git_uri": "git://github.com/looker/app-event-config-marketplace-testing.git",
+            "git_ref": "3ffea2d887f887df7f390b02df02f16a588e72b0",
+            "label": "Event App Config",
+            "constant_name": "CONFIG_PROJECT_NAME"
+        }
+    ]
+}

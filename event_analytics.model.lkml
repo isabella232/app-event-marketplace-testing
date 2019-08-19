@@ -2,7 +2,7 @@ connection: "@{CONNECTION_NAME}"
 label: "Application GA360"
 
 # Config includes
-include: "//@{CONFIG_PROJECT_NAME}/sessions_config.view"
+include: "//@{CONFIG_PROJECT_NAME}/sessions.view"
 include: "//@{CONFIG_PROJECT_NAME}/event_analytics_config.model"
 
 # Adapter includes

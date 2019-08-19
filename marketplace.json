@@ -35,7 +35,7 @@
     "auxiliary_projects": [
         {
             "git_uri": "git://github.com/looker/app-event-config-marketplace-testing.git",
-            "git_ref": "3ffea2d887f887df7f390b02df02f16a588e72b0",
+            "git_ref": "1226e5b3a1801b8147bbcd66918487901fea413d",
             "label": "Event App Config",
             "constant_name": "CONFIG_PROJECT_NAME"
         }

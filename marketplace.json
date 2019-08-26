@@ -10,20 +10,17 @@
     "constants": {
         "CONNECTION_NAME": {
             "label": "Connection Name",
-            "description": "The connection that houses your GA360 data (it should have been created using Fivetran).",
             "value_constraint": "connection"
         },
         "SCHEMA_NAME": {
-            "label": "Schema Name",
-            "description": "The schema name of your GA360 data."
+            "label": "Schema Name"
         },
         "GA360_TABLE_NAME": {
             "label": "GA360 Table Name",
-            "description": "The table name of your GA360 data (this should end with a _* due to date partitioned tables)."
+            "description": "The table name of your GA360 data (this should end with a _* if using date partitioned tables)."
         },
         "CONFIG_PROJECT_NAME": {
-            "label": "Config Project Name",
-            "description": "The name of the associated config project."
+            "label": "Config Project Name"
         }
     },
     "models": [
@@ -36,7 +33,7 @@
         {
             "git_uri": "git://github.com/looker/app-event-config-marketplace-testing.git",
             "git_ref": "7636db64a16c7454f7d2f1f265daa5a4226c9b28",
-            "label": "Event App Config",
+            "label": "Web Analytics Config",
             "constant_name": "CONFIG_PROJECT_NAME"
         }
     ]

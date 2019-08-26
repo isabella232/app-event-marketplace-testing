@@ -3,6 +3,7 @@ project_name: "app-event"
 application: web-analytics {
   label: "Web Analytics"
   definition_file: "application.json"
+  config_project: "@{CONFIG_PROJECT_NAME}"
 }
 
 ################ Constants ################

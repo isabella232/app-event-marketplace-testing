@@ -5,7 +5,7 @@
       "badge": "Beta",
       "brand_color": "#35465C",
       "image_uri": "https://marketplace-api.looker.com/app-icons/icon_event_analytics.svg",
-      "tagline": "All the data, none of the headache"
+      "tagline": "Get an in-depth look at how your site is doing using your GA360 data"
     },
     "constants": {
         "CONNECTION_NAME": {
